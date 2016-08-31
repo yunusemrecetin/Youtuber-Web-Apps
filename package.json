@@ -26,9 +26,7 @@
   },
   "homepage": "https://github.com/yunusemrecetin/Youtuber-Web-Apps#readme",
   "devDependencies": {
-    "gulp-connect": "^5.0.0"
-  },
-  "dependencies": {
+    "gulp-connect": "^5.0.0",
     "gulp-open": "^2.0.0"
   }
 }

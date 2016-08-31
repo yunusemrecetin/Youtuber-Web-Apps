@@ -2,25 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Youtuber Web Apps</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
     <!-- css -->
-    <link rel="stylesheet" type="text/css" href="node_modules/semantic-ui/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="/node_modules/semantic-ui-css/semantic.min.css" />
+    <link rel="stylesheet" type="text/css" href="/node_modules/semantic-ui-icon/icon.min.css" />
+
+    <!-- script -->
+    <script src="//code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="//apis.google.com/js/client.js?onload=googleApiClientReady"> </script>
+    <script src="/node_modules/semantic-ui-css/semantic.min.js"></script>
+    <script src="js/youtuber.js"></script>
 
 </head>
 <body>
 
+    <!-- menu -->
+    <div class="ui secondary pointing menu">
+        <a class="active item" data-tab="tab-youtube">
+            Youtube
+        </a>
+        <a class="item" data-tab="tab-twitter">
+            Twitter
+        </a>
+        <div class="right menu">
+            <a class="ui item">
+                <i class="icon instagram"></i>
+            </a>
+            <a class="ui item">
+                <i class="icon twitter"></i>
+            </a>
+            <a class="ui item">
+                <i class="icon facebook"></i>
+            </a>
+        </div>
+    </div>
+    <!-- # menu -->
 
-<!-- header -->
-<h2 class="ui center aligned icon header">
-    <i class="circular users icon"></i>
-    Friends
-</h2>
-<!-- # header -->
+    <!-- header -->
+    <h2 class="ui center aligned icon header">
+        <i class="circular users icon"></i>
+        Friends
+    </h2>
+    <!-- # header -->
 
+    <!-- content -->
 
-<!-- js -->
-<script src="node_modules/semantic-ui/dist/semantic.min.js"></script>
+    <!-- tab 1 (youtube posts) -->
+    <div class="active ui tab" data-tab="tab-youtube">
+        Youtube
+    </div>
+    <!-- # tab 1 -->
+
+    <!-- tab 2 (twitter posts) -->
+    <div class="ui tab" data-tab="tab-twitter">
+        Twitter
+    </div>
+    <!-- # tab 2 -->
+
+    <!-- # content -->
 
 </body>
 </html>
